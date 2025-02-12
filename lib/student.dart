@@ -24,13 +24,9 @@ class Students {
     //last step is to call output
     output();
   }
-  remove(String fieldName){
-    //remove a key-value entry from any Map that contains a property with the name fieldName.
-    //Eg: {id: 2, first:'Steve', last:'Griffith', email: 'griffis@algonquincollege.com'}
-    // with field="email", remove the "email" property from EACH Map in the LIST
-    for (var person in people) {
-        person.remove(fieldName);
-    }
+  remove(String fieldName, dynamic value){
+    //remove one or more Map item(s) from the List using the removeWhere() List method.
+      people.removeWhere((person) => person[fieldName] == value);
 
     //last step is to call output()
     output();

@@ -22,5 +22,5 @@ studentData.sort("first");
 
 studentData.plus({'id': 5, 'first': 'Olivia', 'last': 'Brown', 'email': 'brown@algonquincollege.com'});
 
-studentData.remove('email');
+studentData.remove('first', 'Rick');
 }
